@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- This is the header of the page -->
+  <head>
+    <!-- Defines character set for page -->
+    <meta charset="utf-8" />
+    <!-- Describes what this page is for -->
+    <meta name="description" content="Unit 7, Final Project" />
+    <!-- This helps smart devices like Ipads, tablets and spart phones parse the page-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Changes tab title -->
+    <title>About Gwen</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@200&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <!-- This is the body -->
+  <body>
+    <!-- This is my header -->
+    <div class="container">
+      <header>
+        <!-- This is my main title -->
+        <h1 class="title_name">About Me</h1>
+          <!-- This is my nav element -->
+        <nav>
+          <ul>
+            <li><a href="index.html">Home Page</a></li>
+            &nbsp;
+            <li><a href="about.html">About Me</a></li>
+            &nbsp;
+            <li><a href="gallery.html">Pet Photos</a></li>
+            &nbsp;
+            <li><a href="interests.html">Interests</a></li>
+            &nbsp;
+          </ul>
+        </nav>
+      </header>
+      <!-- This is my main element -->
+      <main>
+        <section class="main-section">
+          <div id="about-picture" >
+            <picture>
+                <source srcset="Images/me-small.jpg" media="(max-width: 600px)">
+                <source srcset="Images/me-large.jpg">
+                <img src="Images/Penny1-large.jpg" alt="Penny napping as a baby">
+            </picture>
+          </div>
+            <h3>
+                My name is Gwen Ferguson
+            </h3>
+            <p>
+                I'm a 2nd semester Computer Science student at TSTC. I also work part-time in the service sector, particularly in call centers. I hate it.
+            </p>
+            <p>
+              You can find more of my work on my <a href="https://github.com/gwentacles">Github</a>
+            </p>
+        </section>
+        <section class="contact-form">
+            <form action="mailto:gferguson@mymail.tstc.edu" method="get">
+                <fieldset class="contact">
+                  <legend>Contact me!</legend>
+                    <label for="name">Name:</label>
+                    <input class="contact_interaction" type="text" id="name" name="name">
+                    <label for="email">Email:</label>
+                    <input class="contact_interaction" type="email" id="email">
+                    <div class="commentbox"> 
+                      <p class="comments">Comments: </p>
+                      <textarea class="contact_interaction" name="message" rows="3" cols="30"></textarea>
+                    </div>
+                    <div class="button">
+                      <button class="contact_interaction" type="button">
+                        Submit
+                      </button>
+                    </div>
+                </fieldset>
+              </form>
+        </section>
+      </main>
+      <!-- This is a footer -->
+      <footer>
+        <p></p>
+        <!-- This is the copyright notice -->
+        <p>&nbsp;&nbsp;&copy; 2021-2022 - Gwen Ferguson. All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>

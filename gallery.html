@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- This is the header of the page -->
+  <head>
+    <!-- Defines character set for page -->
+    <meta charset="utf-8" />
+    <!-- Describes what this page is for -->
+    <meta name="description" content="Unit 7, Final Project" />
+    <!-- This helps smart devices like Ipads, tablets and spart phones parse the page-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Changes tab title -->
+    <title>Gwen's Pets</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@200&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <!-- This is the body -->
+  <body>
+    <!-- This is my header -->
+    <div class="container">
+      <header>
+        <!-- This is my main title -->
+        <h1 class="title_name">My Pets</h1>
+          <!-- This is my nav element -->
+        <nav>
+          <ul>
+            <li><a href="index.html">Home Page</a></li>
+            &nbsp;
+            <li><a href="about.html">About Me</a></li>
+            &nbsp;
+            <li><a href="gallery.html">Pet Photos</a></li>
+            &nbsp;
+            <li><a href="interests.html">Interests</a></li>
+            &nbsp;
+          </ul>
+        </nav>
+      </header>
+      <!-- This is my main element -->
+      <main>
+        <section class="main-section">
+          <h2 class="gallery-title">
+            Photos of Penny
+          </h2>
+          <div id="pictures" >
+            <picture>
+                <source srcset="Images/Penny1-Small.jpg" media="(max-width: 600px)">
+                <source srcset="Images/Penny1-large.jpg">
+                <img src="Images/Penny1-large.jpg" alt="Penny napping as a baby">
+            </picture>
+            <picture>
+                <source srcset="Images/Penny2-Small.jpg" media="(max-width: 600px)">
+                <source srcset="Images/Penny2-large.jpg">
+                <img src="Images/Penny3-large.jpg" alt="Baby Penny chilling out">
+            </picture>
+            <picture>
+                <source srcset="Images/Penny3-Small.jpg" media="(max-width: 600px)">
+                <source srcset="Images/Penny3-large.jpg">
+                <img src="Images/Penny3-large.jpg" alt="Adult Penny on the desk, where she shouldn't be">
+            </picture>
+            <picture>
+                <source srcset="Images/Penny4-Small.jpg" media="(max-width: 600px)">
+                <source srcset="Images/Penny4-large.jpg">
+                <img src="Images/Penny4-large.jpg" alt="Sleepy adult Penny">
+            </picture>
+          </div>
+        </section>
+      </main>
+      <!-- This is a footer -->
+      <footer>
+        <!-- This is the copyright notice -->
+        <p>&nbsp;&nbsp;&copy; 2021-2022 - Gwen Ferguson. All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>
